@@ -3,25 +3,25 @@ import Tools.IOTools;
 
 public class ganzzahldivision {
     public static void main(String[] args) {
-        int uno;
-        int duo;
+        int num1, num2, quotient, left;
 
-        uno = IOTools.readInteger("please input number =");
-        duo = IOTools.readInteger("please input number =");
+        System.out.println("-----------------");
+        System.out.println("Division mit Rest");
+        System.out.println("-----------------");
 
+        num1 = IOTools.readInteger("please input number1 =");
+        num2 = IOTools.readInteger("please input number2 =");
 
         
+        quotient = num1 / num2;
+        left = num1 % num2;
 
-        System.out.println(
-        "\n-----------------------"+
-        "\nDivision mit rest"+
-        "\n-----------------------"+
-        " \nErste Zahl: "+ uno +
-        "\nZweite Zahl: "+ duo+
-        "\n "+
-        "\n45 = 12 * 3 + 9"+
-        "\n-----------------------");
+        System.out.println();
+        System.out.println(num1 + " = " + num2 + " * " + quotient + " + " + left);
+        System.out.println("-----------------");
 
+
+ 
       
     }
 }
