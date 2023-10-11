@@ -17,9 +17,9 @@ public class vertreterprovision {
             provision = 3.0;
         }
 
-        earnings = earnings + provision;
+        earnings = earnings * (1 + provision / 100);
 
-        System.out.println(earnings);
+        System.out.println(earnings + "Euro");
 
     }
 }
